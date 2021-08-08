@@ -23,8 +23,6 @@ import java.util.logging.{Level, Logger}
 import scala.jdk.CollectionConverters._
 import scala.util.{Failure, Success, Using}
 import com.google.protobuf.ExtensionRegistry
-import akka.protobufv3.internal.Descriptors.FileDescriptor
-import akka.protobufv3.internal.DescriptorProtos.FileDescriptorProto
 
 /**
  * Provides conveniences for reading and parsing Protobuf descriptor sets
