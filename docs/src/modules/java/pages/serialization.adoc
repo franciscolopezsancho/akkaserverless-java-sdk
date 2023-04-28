@@ -38,6 +38,6 @@ IMPORTANT: To allow proper reading of JSON messages from external topics, the me
 
 - `Content-Type` = `application/application-json`
 - `ce-specversion` = `1.0`
-- `ce-type` = fully qualified name (e.g.  `com.example.ValueIncreased`)
+- `ce-type` = simple name (e.g. `ValueIncreased`)
 
 (The `ce-` prefixed attributes are part of the CloudEvents specification.)
