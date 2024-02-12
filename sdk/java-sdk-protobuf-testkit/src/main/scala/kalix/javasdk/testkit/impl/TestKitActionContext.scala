@@ -46,6 +46,4 @@ final class TestKitActionContext(metadata: Metadata, mockRegistry: MockRegistry 
   override def eventSubject() = metadata.get("ce-subject")
 
   override def getGrpcClient[T](clientClass: Class[T], service: String): T = getComponentGrpcClient(clientClass)
-
-  override def getOpenTelemetryTracer: Optional[Tracer] = Optional.empty()
 }

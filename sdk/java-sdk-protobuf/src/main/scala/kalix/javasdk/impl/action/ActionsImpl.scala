@@ -142,9 +142,6 @@ private[javasdk] final class ActionsImpl(
       with ActionCreationContext {
     override def getGrpcClient[T](clientClass: Class[T], service: String): T =
       GrpcClients(system).getGrpcClient(clientClass, service)
-
-    override def getOpenTelemetryTracer: Optional[Tracer] =
-      serviceName.flatMap(telemetries.get(_).map(_.getTracer())).asJava
   }
 
   private def effectToResponse(
