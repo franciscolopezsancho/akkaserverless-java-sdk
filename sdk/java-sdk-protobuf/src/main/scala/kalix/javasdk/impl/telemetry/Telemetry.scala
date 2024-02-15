@@ -52,6 +52,7 @@ import scala.jdk.OptionConverters._
 object Telemetry extends ExtensionId[Telemetry] {
 
   val TRACE_PARENT_KEY = TraceInstrumentation.TRACE_PARENT_KEY
+  val TRACE_STATE_KEY = TraceInstrumentation.TRACE_STATE_KEY
 
   override def createExtension(system: ExtendedActorSystem): Telemetry =
     new Telemetry(system)
